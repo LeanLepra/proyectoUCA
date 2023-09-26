@@ -1,0 +1,30 @@
+### TRAER TODOS LOS PRODUCTOS
+GET http://127.0.0.1:4500/productos
+
+### TRAER LOS PRODUCTOS POR ID
+GET http://127.0.0.1:4500/productos/41
+
+### AGREGAR PRODUCTOS
+POST http://127.0.0.1:4500/productos
+Content-Type: application/json
+
+{
+    "Descripcion": "prueba para Marianela   ",
+    "Fecha": "2023/09/26",
+    "Precio": "123",
+    "Comentario": "Quiero un 9"
+}
+
+### MODIFICAR PRODUCTOS POR ID 
+PUT http://127.0.0.1:4500/productos/41
+Content-Type: application/json
+
+{
+    "Descripcion": "ahorea quiero 10",
+    "Fecha": "2023/09/26",
+    "Precio": "123",
+    "Comentario": "asddasda"
+}
+
+### ELIMINAR PRODUCTOS POR ID
+DELETE http://127.0.0.1:4500/productos/41
